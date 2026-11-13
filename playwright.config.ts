@@ -14,6 +14,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  testIgnore: process.env.SKIP_LOCAL_API_TESTS === '1' ? '**/api/employee-api.spec.ts' : undefined,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -78,4 +79,3 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
-

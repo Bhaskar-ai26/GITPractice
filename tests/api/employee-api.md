@@ -5,7 +5,9 @@ Source: `http://localhost:5002/api-docs/` (OpenAPI 3.0.3 spec at `http://localho
 
 Base URL: `http://localhost:5002`
 
-Automated tests: [employee-api.spec.js](./employee-api.spec.js)
+Automated tests: [employee-api.spec.ts](./employee-api.spec.ts)
+
+The GitHub Actions workflow excludes this suite because the API server is not part of this repository. To run it locally, start the API server on port 5002 and run `npx playwright test tests/api/employee-api.spec.ts`.
 
 ---
 
