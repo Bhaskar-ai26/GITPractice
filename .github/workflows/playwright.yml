@@ -23,6 +23,8 @@ jobs:
       run: npx playwright test
       env:
         SKIP_LOCAL_API_TESTS: '1'
+        APP_USERNAME: ${{ secrets.APP_USERNAME }}
+        APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
