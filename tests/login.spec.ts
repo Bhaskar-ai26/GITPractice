@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { admin } from '../testdta/creds';
 
-test('login test', async ({ page }) => {
+test('login test', { tag: ['@smoke'] }, async ({ page }) => {
   await page.goto('https://qtpsudhakar-vibetestq-hrm.up.railway.app/');
   /* await page.getByRole('textbox', { name: 'Username' }).fill('bhaskar');
   await page.getByRole('textbox', { name: 'Password' }).fill('Bhaskar@123#'); */

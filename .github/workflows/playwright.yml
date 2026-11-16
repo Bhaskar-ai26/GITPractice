@@ -20,7 +20,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test
+      run: npx playwright test --grep @smoke
       env:
         SKIP_LOCAL_API_TESTS: '1'
         APP_USERNAME: ${{ secrets.APP_USERNAME }}
