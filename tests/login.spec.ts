@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { admin } from '../testdta/creds';
+import { admin } from '../testdata/creds';
 
 test('login test', { tag: ['@smoke'] }, async ({ page }) => {
   await page.goto('https://qtpsudhakar-vibetestq-hrm.up.railway.app/');
