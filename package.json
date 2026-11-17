@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:bdd": "node --import tsx ./node_modules/@cucumber/cucumber/bin/cucumber.js --config bdd/cucumber.json",
+    "test:bddpom": "node --import tsx ./node_modules/@cucumber/cucumber/bin/cucumber.js --config bddpom/cucumber.json"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
     "@playwright/test": "^1.65.1",
     "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
   "dependencies": {

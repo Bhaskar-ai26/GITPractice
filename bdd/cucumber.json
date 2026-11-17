@@ -1,0 +1,12 @@
+{
+  "default": {
+    "paths": ["bdd/features/**/*.feature"],
+    "require": ["bdd/steps/**/*.ts"],
+    "format": ["progress-bar", "html:cucumber-report.html"]
+  },
+  "world": {
+    "paths": ["bdd/features/login.feature"],
+    "require": ["bdd/world/**/*.ts"],
+    "format": ["progress-bar", "html:cucumber-report.html"]
+  }
+}

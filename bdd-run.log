@@ -1,0 +1,9 @@
+
+> pw_git_practice@1.0.0 test:bdd
+> node --import tsx ./node_modules/@cucumber/cucumber/bin/cucumber.js --config bdd/cucumber.json
+
+.......................
+
+2 scenarios (2 passed)
+23 steps (23 passed)
+0m 25.427s (0m 25.268s executing your code)
