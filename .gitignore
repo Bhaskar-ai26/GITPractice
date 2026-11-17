@@ -12,4 +12,7 @@ playwright-report
 blob-report
 playwright/.cache
 playwright/.auth
-    
+.env*
+# Playwright CLI output (may contain credentials)
+.playwright-cli/
+.claude

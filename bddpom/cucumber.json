@@ -1,0 +1,7 @@
+{
+  "default": {
+    "paths": ["bddpom/features/**/*.feature"],
+    "require": ["bddpom/steps/**/*.ts", "bddpom/world/**/*.ts"],
+    "format": ["progress-bar", "html:bddpom/cucumber-report.html"]
+  }
+}

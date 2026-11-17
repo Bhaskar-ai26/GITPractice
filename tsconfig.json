@@ -12,8 +12,7 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "types": ["node"]
+     "types": ["node"]
   },
-  "include": ["tests/**/*.ts"],
-  "exclude": ["node_modules"]
+
 }
