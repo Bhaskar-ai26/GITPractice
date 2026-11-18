@@ -32,14 +32,14 @@ jobs:
         path: playwright-report/
         retention-days: 30
     - name: Upload report for GitHub Pages
-      if: ${{ !cancelled() && github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') }}
+      if: ${{ !cancelled() && github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/vijay') }}
       uses: actions/upload-pages-artifact@v3
       with:
         path: playwright-report/
 
   deploy:
     needs: test
-    if: ${{ !cancelled() && github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') }}
+    if: ${{ !cancelled() && github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/vijay') }}
     runs-on: ubuntu-latest
     permissions:
       pages: write
